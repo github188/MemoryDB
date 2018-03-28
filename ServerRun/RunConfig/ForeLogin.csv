@@ -1,0 +1,5 @@
+STRING,STRING,STRING,INT
+ACCOUNT,PASS,IP,PORT
+yang,wg,10.1.1.27,
+linking,linking_0601,,
+admin,admin,,

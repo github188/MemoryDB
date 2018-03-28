@@ -1,0 +1,9 @@
+STRING,STRING,INT,STRING,STRING,STRING,INT,INT,STRING
+INDEX,STRING,VALUE,INFO,STRING2,STRING3,VALUE2,VALUE3,STRING4
+DataDB,127.0.0.1,3306,,root,root,,,home_db
+DBServer,127.0.0.1,7700,,t_tablelist,,,,
+DBNode,127.0.0.1,8001,,,,,,
+MainDBNode,127.0.0.1,8001,,,,,,
+ResourcesData,127.0.0.1,3306,,root,root,,,worlddata
+*DBBack,127.0.0.1,2000,,,,,,
+*BackDataDB,127.0.0.1,3306,,root,root,,,db_back

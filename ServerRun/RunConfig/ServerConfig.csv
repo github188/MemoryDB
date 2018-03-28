@@ -1,0 +1,9 @@
+STRING,STRING,INT,STRING,STRING,STRING,INT,INT,STRING,INT
+INDEX,STRING,VALUE,INFO,STRING2,STRING3,VALUE2,VALUE3,STRING4,NODE_KEY
+GateNet,127.0.0.1,4000,游戏服务器监听端口,TCP,10.1.1.27,1,,S3UDP开放IP内网必填内网的,
+GSServer,127.0.0.1,5001,游戏服务器之间的连接监听,TCP,,,,,-1001
+MainGS,127.0.0.1,5000,gs互连节点,TCP,,,,,-1001
+GameDB,127.0.0.1,7700,,GameDB,YES,100001,200000,V2-V3 新建表格ID范围,
+ResourcesData,127.0.0.1,3306,更新资源数据库,root,root,,,worlddata,
+GameLogData,127.0.0.1,3306,运营日志数据库,root,root,,,gameLog,
+GLogData,127.0.0.1,3306,GLog运营日志,root,root,,,gameLog,

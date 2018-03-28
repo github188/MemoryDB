@@ -1,0 +1,7 @@
+STRING,STRING,INT,STRING,STRING,STRING,INT,INT,STRING,INT
+INDEX,STRING,VALUE,INFO,STRING2,STRING3,VALUE2,VALUE3,STRING4,NODE_KEY
+ResourcesNet,10.1.1.27,10001,游戏服务器监听端口,TCP,10.1.1.27,,,,
+RGServer,127.0.0.1,0,游戏服务器之间的连接监听,TCP,,,,,
+MainGS,127.0.0.1,0,gs互连节点,TCP,,,,,-1001
+ForeNet,10.1.1.27,3001,前台服务网络监听,TCP,,,,,
+ResourcesData,127.0.0.1,3306,,root,root,,,worlddata,

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Login">
+      <UniqueIdentifier>{98ffbec3-35ac-4646-9b62-ffa1d5111dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Account">
+      <UniqueIdentifier>{5cec688d-1b8d-4e73-af62-c1e8cfcf3bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{b38dd236-30c7-4134-bb3c-cba95501ce5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{5ad0ba14-da07-4b05-a994-a59cd5657eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebPlayer">
+      <UniqueIdentifier>{196a6053-b54e-4a93-a0bd-efa4075f88d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetMessage">
+      <UniqueIdentifier>{5bd1d5fa-af4e-4b8b-aef8-515b1154ec27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="icon2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="icon1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginThread.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Login.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="LG_NodeNetEvent.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginEvent.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountNetEvent.h">
+      <Filter>Account</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameLog.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\HttpClient.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SDK.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\WebPlayer.h">
+      <Filter>WebPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\LGWebNet.h">
+      <Filter>WebPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\WebNetMessage.h">
+      <Filter>NetMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\BigMsgEvent.h">
+      <Filter>NetMessage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginThread.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginEvent.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameLog.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LG_NodeNetEvent.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\HttpClient.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SDK.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\WebNetMessage.cpp">
+      <Filter>NetMessage</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\WebPlayer.cpp">
+      <Filter>WebPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\LGWebNet.cpp">
+      <Filter>WebPlayer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LoginServer.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
