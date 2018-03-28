@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{62a60762-8312-44df-9382-3046d685acf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{385f5cbd-4cd8-41d1-9284-f28a4b108d7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\MemoryDB\Core\BaseMemoryDB.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\DataSource.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\DBClientRequest.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\DBNodeEvent.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\DBServerOperate.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\MemoryDB.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\MemoryDBNode.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\MemoryDBTable.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\MySqlDBSaver.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\LocalFileDBSaver.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\KeyDistributionInfo.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\MemoryDBClient.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\MemoryDBIndexTable.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\DBNodeManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\MemoryDBManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\SqlDBTable.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\SqlLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\CoolDBTable.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\DBTable.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\MySqlDBTool.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\MemoryDBRecord.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\DBNetPacket.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\DBClientForNode.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemoryDB\Core\DBFieldTable.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MemoryDB\Core\BaseMemoryDB.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DataSource.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBClientRequest.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBNodeEvent.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBSaver.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBServerOperate.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\MemoryDB.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\MemoryDBHead.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\MemoryDBNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\MemoryDBTable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\MySqlDBSaver.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\KeyDistributionInfo.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DataSourceOperate.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\LocalFileDBSaver.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\Operate.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBNodeOperate.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\MemoryDBClient.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\MemoryDBIndexTable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBNodeManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\MemoryDBManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\SqlDBTable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBCallBack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBOperate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\MySqlDBTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\SqlLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\CoolDBTable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\MemoryDBRecord.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBNetPacket.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBClientForNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\CRC16.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemoryDB\Core\DBFieldTable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

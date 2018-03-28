@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="EventInferface">
+      <UniqueIdentifier>{1ca119c2-f3b2-4951-9b40-64633d1e9ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventInferface\NetMessageEvent">
+      <UniqueIdentifier>{497b09b8-f7af-45ef-8734-edb3de4e01a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventInferface\ScriptLogic">
+      <UniqueIdentifier>{cb214e7e-d5a1-4c05-84ee-39b5a5ebe01e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventInferface\ScriptEvent">
+      <UniqueIdentifier>{cb8444b7-ada6-44eb-804f-65902b910465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventInferface\AttributeEvent">
+      <UniqueIdentifier>{58829b9f-bad2-4e4b-8995-3d9fe6479ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventInferface\MultiTheadEvent">
+      <UniqueIdentifier>{e962dd34-b52c-408f-9ef4-a002855c4f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventInferface\Logic">
+      <UniqueIdentifier>{35044cb1-42ca-4886-a8fa-278141a94a22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventInferface\LogicTime">
+      <UniqueIdentifier>{26253277-df9c-467e-b55b-224cbde90acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaScript">
+      <UniqueIdentifier>{2f9ed081-52d2-4515-825c-bfeae1b12aae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\EventCore\LogicSystem\NetMessageEvent.cpp">
+      <Filter>EventInferface\NetMessageEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\NetSendEvent.cpp">
+      <Filter>EventInferface\NetMessageEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\ActionEvent.cpp">
+      <Filter>EventInferface\ScriptLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\ScriptLogicEvent.cpp">
+      <Filter>EventInferface\ScriptLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\ScriptLogicNode.cpp">
+      <Filter>EventInferface\ScriptLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\LuaEventObject.cpp">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\RunScriptTool.cpp">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\ScriptEvent.cpp">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\ScriptEventCenter.cpp">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\ScriptMaster.cpp">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\AttributeEvent.cpp">
+      <Filter>EventInferface\AttributeEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\EventCenterManager.cpp">
+      <Filter>EventInferface\MultiTheadEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\EventThreadServer.cpp">
+      <Filter>EventInferface\MultiTheadEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\TaskEventThread.cpp">
+      <Filter>EventInferface\MultiTheadEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\ThreadEvent.cpp">
+      <Filter>EventInferface\MultiTheadEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\ThreadEventCenter.cpp">
+      <Filter>EventInferface\MultiTheadEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\LogicMaster.cpp">
+      <Filter>EventInferface\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\LogicTime.cpp">
+      <Filter>EventInferface\LogicTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\LuaScriptFace.cpp">
+      <Filter>LuaScript</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\LuaScriptManager.cpp">
+      <Filter>LuaScript</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\LogicSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\LogicSystem\LuaObj_DataTable.cpp">
+      <Filter>LuaScript</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\EventCore\LogicSystem\NetEventFactory.h">
+      <Filter>EventInferface\NetMessageEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\NetMessageEvent.h">
+      <Filter>EventInferface\NetMessageEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\NetSendEvent.h">
+      <Filter>EventInferface\NetMessageEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\ActionEvent.h">
+      <Filter>EventInferface\ScriptLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\LogicAcceptEvent.h">
+      <Filter>EventInferface\ScriptLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptLogicEvent.h">
+      <Filter>EventInferface\ScriptLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptLogicNode.h">
+      <Filter>EventInferface\ScriptLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\LuaEventObject.h">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\LuaObjectPool.h">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\RunScriptTool.h">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptEvent.h">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptEventCenter.h">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptEventFactory.h">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptMaster.h">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\TableScriptPool.h">
+      <Filter>EventInferface\ScriptEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\AttributeEvent.h">
+      <Filter>EventInferface\AttributeEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\EventCenterManager.h">
+      <Filter>EventInferface\MultiTheadEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\EventThreadServer.h">
+      <Filter>EventInferface\MultiTheadEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\TaskEventThread.h">
+      <Filter>EventInferface\MultiTheadEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\ThreadEvent.h">
+      <Filter>EventInferface\MultiTheadEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\ThreadEventCenter.h">
+      <Filter>EventInferface\MultiTheadEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\LogicMaster.h">
+      <Filter>EventInferface\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\LogicTime.h">
+      <Filter>EventInferface\LogicTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\LuaScriptFace.h">
+      <Filter>LuaScript</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\LuaScriptManager.h">
+      <Filter>LuaScript</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\LogicSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\LogicSystem\LuaObj_DataTable.h">
+      <Filter>LuaScript</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

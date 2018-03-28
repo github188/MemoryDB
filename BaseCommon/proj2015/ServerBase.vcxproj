@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDevelop|Win32">
+      <Configuration>DebugDevelop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDevelop|x64">
+      <Configuration>DebugDevelop</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D9AE22F-66AB-4606-A6B5-7737CC485497}</ProjectGuid>
+    <RootNamespace>ShareMemTable</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\ProjectEnv.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\ProjectEnv.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\ProjectEnv.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\ProjectEnv.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\ProjectEnv.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\ProjectEnv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(CLIENT_OBJ_DIR)\Lib\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|Win32'">$(CLIENT_OBJ_DIR)\Lib\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Server_Out_Dir)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|x64'">$(Server_Out_Dir)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(CLIENT_OBJ_DIR)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|Win32'">$(CLIENT_OBJ_DIR)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Server_Int_Dir)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|x64'">$(Server_Int_Dir)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Server_Out_Dir)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Server_Out_Dir)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(CLIENT_OBJ_DIR)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Server_Int_Dir)\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)_d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|x64'">$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Server\Base;..\Server\SMU;.\Main;.\DB;.\ShareData;..\Server\Other;.\;$(CODE_COMMON_DIR)/BaseCommon;$(CODE_COMMON_DIR)\EventCore\Core;$(CODE_COMMON_DIR)\EventCore\LogicSystem;$(CODE_COMMON_DIR)/LuaPlus;./Base;../;$(CODE_COMMON_DIR)/NetDll/Net;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;__WINDOWS__;_USE_32BIT_TIME_T;SERVERBASE_EXPORTS;__SERVER__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>true</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(TargetDir)$(ProjectName)_d.lib</ImportLibrary>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_d.pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY $(OutDir)$(ProjectName)_d.lib $(CLIENT_LIB_DIR)\$(ProjectName)_d.lib
+COPY $(OutDir)$(ProjectName)_d.dll $(Server_Out_Dir)\$(ProjectName)_d.dll
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Server\Base;..\Server\SMU;.\Main;.\DB;.\ShareData;..\Server\Other;.\;$(CODE_COMMON_DIR)/BaseCommon;$(CODE_COMMON_DIR)\EventCore\Core;$(CODE_COMMON_DIR)\EventCore\LogicSystem;$(CODE_COMMON_DIR)/LuaPlus;./Base;../;$(CODE_COMMON_DIR)/NetDll/Net;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;__WINDOWS__;_USE_32BIT_TIME_T;SERVERBASE_EXPORTS;__SERVER__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>true</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(TargetDir)$(ProjectName)_d.lib</ImportLibrary>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_d.pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY $(OutDir)$(ProjectName)_d.lib $(CLIENT_LIB_DIR)\$(ProjectName)_d.lib
+COPY $(OutDir)$(ProjectName)_d.dll $(Server_Out_Dir)\$(ProjectName)_d.dll
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(CODE_COMMON_DIR)/BaseCommon;$(CODE_COMMON_DIR)/GameData;$(CODE_COMMON_DIR)/EventCore/Core;$(CODE_COMMON_DIR)/EventCore/LogicSystem;$(CODE_COMMON_DIR)/ServerBase/Base;$(CODE_COMMON_DIR);./;$(CODE_COMMON_DIR)/LuaPlus;$(CODE_COMMON_DIR)/NetDll/Net;../;GameServer;Net;ServerEvent;DBWork;../Common;$(CODE_COMMON_DIR)/ServerBase/DBWork;$(CODE_COMMON_DIR)/MemoryDB/Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64;_DEBUG;__WINDOWS__;SERVERBASE_EXPORTS;__SERVER__;SHOW_EVENT_TICK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>true</EnablePREfast>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName).dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(TargetDir)$(ProjectName)_d.lib</ImportLibrary>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName)_d.lib $(COMMON_BASE_LIB)\Lib\   /Y
+copy $(OutDir)$(ProjectName)_d.dll $(COMMON_BASE_LIB)\Dll\  /Y
+copy $(OutDir)$(ProjectName)_d.dll $(GAME_SERVER_RUN)\  /Y
+copy $(OutDir)$(ProjectName)_d.pdb $(GAME_SERVER_RUN)\  /Y
+copy $(OutDir)$(ProjectName)_d.dll $(Server_Out_Dir)_2\  /Y
+copy $(OutDir)$(ProjectName)_d.pdb $(Server_Out_Dir)_2\  /Y
+copy $(OutDir)$(ProjectName)_d.dll $(Server_Out_Dir)_3\  /Y
+copy $(OutDir)$(ProjectName)_d.pdb $(Server_Out_Dir)_3\  /Y
+
+xcopy $(CODE_COMMON_DIR)\ServerBase\Base\*.h $(COMMON_BASE_LIB)\Include\  /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDevelop|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(CODE_COMMON_DIR)/BaseCommon;$(CODE_COMMON_DIR)/GameData;$(CODE_COMMON_DIR)/EventCore/Core;$(CODE_COMMON_DIR)/EventCore/LogicSystem;$(CODE_COMMON_DIR)/ServerBase/Base;$(CODE_COMMON_DIR);./;$(CODE_COMMON_DIR)/LuaPlus;$(CODE_COMMON_DIR)/NetDll/Net;../;GameServer;Net;ServerEvent;DBWork;../Common;$(CODE_COMMON_DIR)/ServerBase/DBWork;$(CODE_COMMON_DIR)/MemoryDB/Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64;_DEBUG;__WINDOWS__;SERVERBASE_EXPORTS;__SERVER__;DEVELOP_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>true</EnablePREfast>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName).dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(TargetDir)$(ProjectName)_d.lib</ImportLibrary>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName)_d.lib $(COMMON_BASE_LIB)\Lib\   /Y
+copy $(OutDir)$(ProjectName)_d.dll $(COMMON_BASE_LIB)\Dll\  /Y
+copy $(OutDir)$(ProjectName)_d.dll $(GAME_SERVER_RUN)\  /Y
+copy $(OutDir)$(ProjectName)_d.pdb $(GAME_SERVER_RUN)\  /Y
+copy $(OutDir)$(ProjectName)_d.dll $(Server_Out_Dir)_2\  /Y
+copy $(OutDir)$(ProjectName)_d.pdb $(Server_Out_Dir)_2\  /Y
+copy $(OutDir)$(ProjectName)_d.dll $(Server_Out_Dir)_3\  /Y
+copy $(OutDir)$(ProjectName)_d.pdb $(Server_Out_Dir)_3\  /Y
+
+xcopy $(CODE_COMMON_DIR)\ServerBase\Base\*.h $(COMMON_BASE_LIB)\Include\  /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Server\Base;..\Server\SMU;.\Main;.\DB;.\ShareData;..\Server\Other;.\;$(CODE_COMMON_DIR)/BaseCommon;$(CODE_COMMON_DIR)\EventCore\Core;$(CODE_COMMON_DIR)\EventCore\LogicSystem;$(CODE_COMMON_DIR)/LuaPlus;./Base;../;$(CODE_COMMON_DIR)/NetDll/Net;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;SERVERBASE_EXPORTS;__WINDOWS__;__SERVER__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>COPY $(OutDir)$(ProjectName).dll $(Server_Out_Dir)_2\$(ProjectName).dll</Command>
+    </PostBuildEvent>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Server\Base;..\Server\SMU;.\Main;.\DB;.\ShareData;..\Server\Other;.\;$(CODE_COMMON_DIR)/BaseCommon;$(CODE_COMMON_DIR)\EventCore\Core;$(CODE_COMMON_DIR)\EventCore\LogicSystem;$(CODE_COMMON_DIR)/LuaPlus;./Base;../;$(CODE_COMMON_DIR)/NetDll/Net;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64;NDEBUG;SERVERBASE_EXPORTS;__WINDOWS__;__SERVER__;SHOW_EVENT_TICK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ServerBase\Base\BaseServer.cpp" />
+    <ClCompile Include="..\ServerBase\Base\Object.cpp" />
+    <ClCompile Include="..\ServerBase\Base\ShareMemAO.cpp" />
+    <ClCompile Include="..\ServerBase\Base\ShareMemAPI.cpp" />
+    <ClCompile Include="..\ServerBase\ServerBaseDll.cpp" />
+    <ClCompile Include="..\ServerBase\Base\ObjPool.cpp" />
+    <ClCompile Include="..\ServerBase\Base\BaseNetHandle.cpp" />
+    <ClCompile Include="..\ServerBase\Base\NetPlayer.cpp" />
+    <ClCompile Include="..\ServerBase\Base\BaseThread.cpp" />
+    <ClCompile Include="..\ServerBase\Base\ObjectManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ServerBase\Base\BaseServer.h" />
+    <ClInclude Include="..\ServerBase\Base\Object.h" />
+    <ClInclude Include="..\ServerBase\Base\ObjectID.h" />
+    <ClInclude Include="..\ServerBase\Base\ServerBaseHead.h" />
+    <ClInclude Include="..\ServerBase\Base\ShareMemAO.h" />
+    <ClInclude Include="..\ServerBase\Base\ShareMemAPI.h" />
+    <ClInclude Include="..\ServerBase\Base\SMU_DataMsg.h" />
+    <ClInclude Include="..\ServerBase\Base\SMU_Log.h" />
+    <ClInclude Include="..\ServerBase\stdafx.h" />
+    <ClInclude Include="..\ServerBase\Base\ObjPool.h" />
+    <ClInclude Include="..\ServerBase\Base\BaseNetHandle.h" />
+    <ClInclude Include="..\ServerBase\Base\NetPlayer.h" />
+    <ClInclude Include="..\ServerBase\Base\BaseThread.h" />
+    <ClInclude Include="..\ServerBase\Base\ObjectFactory.h" />
+    <ClInclude Include="..\ObjectID.h" />
+    <ClInclude Include="..\ServerBase\Base\ObjectManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Proj2010\BaseCommon.vcxproj">
+      <Project>{7b59c823-5459-4c17-8022-fab40d42766b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Proj2010\EventCore.vcxproj">
+      <Project>{8fd22748-0005-4b29-9136-bd5e8512b1bd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Net.vcxproj">
+      <Project>{381212ea-3ff5-40dd-a666-8ee4d026b880}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

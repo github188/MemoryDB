@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'cocos2dx' target in the 'cocos2dx' project
+//
+#define __LINUX__ 1
+
+#define __IOS__   1
+
+#define MAX_PATH 256
+
+#define _UNICODE
+
+#define STATE_BASECOMMON_LIB
+#define STATE_NET_LIB
+#define STATE_EVENTCORE_LIB
+
+#include "stdlib.h"

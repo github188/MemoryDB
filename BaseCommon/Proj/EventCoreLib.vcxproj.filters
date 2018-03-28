@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Event">
+      <UniqueIdentifier>{7dffece4-7454-4ab3-884c-22f5d466a6d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\EventCore\Core\CEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\Core\ClientEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\Core\Event.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\Core\EventCenter.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\Core\EventCore.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\Core\EventFactory.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\Core\FixedTimeManager.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\Core\LogicEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\Core\LogicNode.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\Core\ServerEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EventCore\Core\ResponseEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\EventCore\Core\CEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\ClientEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\EasyListNode.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\Event.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\EventCenter.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\Eventcore.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\EventDllFace.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\EventFactory.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\FixedTimeManager.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\LogicEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\LogicNode.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\ScriptFace.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\ServerEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\ResponseEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EventCore\Core\EventCallBack.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

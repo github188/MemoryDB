@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{2fca42ae-558f-49b7-8e10-6e39033e0c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{43b06208-059d-417b-82e4-4a6e11fe6573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TCP">
+      <UniqueIdentifier>{04608b1c-7197-4ca6-b34d-0e5fa07427e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{78472ff6-7f9e-44ce-b9f6-5b92b97baf40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IOCP">
+      <UniqueIdentifier>{59f5081f-79d1-4a9b-8333-5a579ce6910e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshedNodeNet">
+      <UniqueIdentifier>{9654a11d-a465-4f60-8a80-027db38eafd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transfer">
+      <UniqueIdentifier>{290e122c-264a-4d49-8630-7b238e6016aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UDP">
+      <UniqueIdentifier>{ef9bb514-5572-4d3c-8142-05d8b0e3d110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebNet">
+      <UniqueIdentifier>{8556f31d-04c0-40ea-babb-4ad77427dc11}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\NetDll\Net.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\ServerIPInfo.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\TCPListenThread.cpp">
+      <Filter>TCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\TCPReceiveThread.cpp">
+      <Filter>TCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\TCPThreadNet.cpp">
+      <Filter>TCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\FileNetTansfer.cpp">
+      <Filter>Transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\FileDataReceive.cpp">
+      <Filter>Transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\EventProtocol.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\EventPacket.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\IOCPServerNet.cpp">
+      <Filter>IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\IOCPCommon.cpp">
+      <Filter>IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPNet.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\IOCPClientSetNet.cpp">
+      <Filter>IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\NetTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\TestServer.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\MeshedNetNodeData.cpp">
+      <Filter>MeshedNodeNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\MeshedNodeNet.cpp">
+      <Filter>MeshedNodeNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\IOCPConnect.cpp">
+      <Filter>IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\GateNet.cpp">
+      <Filter>Transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPThreadNet.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPMessage.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPbroadcast.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\EventData.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\BaseEventNet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\BaseNetHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\NodeNetEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\ServerSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\Socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\SocketAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\SocketInputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\SocketOutputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\ClientNet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\NetConnect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\ServerNetThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPServerClientNet.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPByTcpNet.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\IOCPUDPNet.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\WebSocket\base64.cpp">
+      <Filter>WebNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\WebSocket\sha1.cpp">
+      <Filter>WebNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\WebGameNet.cpp">
+      <Filter>WebNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\WebSocket\WebServerProtocol.cpp">
+      <Filter>WebNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\WebSocket\WebProtocol.cpp">
+      <Filter>WebNet</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\NetDll\Net\NetHead.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\ServerIPInfo.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\NetConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\NetDataBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\TCPListenThread.h">
+      <Filter>TCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\TCPReceiveThread.h">
+      <Filter>TCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\TCPThreadNet.h">
+      <Filter>TCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\FileNetTransfer.h">
+      <Filter>Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\FileDataReceive.h">
+      <Filter>Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\NetTest.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\EventProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\EventPacket.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\IOCPServerNet.h">
+      <Filter>IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\IOCPCommon.h">
+      <Filter>IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPNet.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\IOCPClientSetNet.h">
+      <Filter>IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\TestServer.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\MeshedNetNodeData.h">
+      <Filter>MeshedNodeNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\MeshedNodeNet.h">
+      <Filter>MeshedNodeNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\IOCPConnect.h">
+      <Filter>IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\GateNet.h">
+      <Filter>Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPThreadNet.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPMessage.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPbroadcast.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\NetIndexPacket.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\EventData.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\BaseEventNet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\BaseNetHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\NodeNetEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\ServerSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\Socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\SocketAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\SocketInputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\SocketOutputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\ClientNet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\NetConnect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\NetSafeCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\ServerNetThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPByTcpNet.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPServerClientNet.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\IOCPUDPNet.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\WebSocket\base64.h">
+      <Filter>WebNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\WebSocket\sha1.h">
+      <Filter>WebNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\WebSocket\WebServerProtocol.h">
+      <Filter>WebNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\WebSocket\WebProtocol.h">
+      <Filter>WebNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\WebGameNet.h">
+      <Filter>WebNet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

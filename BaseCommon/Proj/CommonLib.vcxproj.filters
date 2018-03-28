@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{ba6ee548-dc3e-479b-9ef0-d90dc0fb9026}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BaseCommon\Array.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Assertx.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Auto.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AutoDebug.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AutoKey.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AutoObjectFieldInfo.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AutoString.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\BaseCommon.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Data.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\DataBuffer.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\DataStream.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyList.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyMap.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyMemory.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyStack.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyString.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\ExtFieldInfo.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FactoryTemplate.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FieldIndex.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FieldInfo.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FieldTypeDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FileAPI.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FileDataStream.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Hand.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\MemBase.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\MemString.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\NiceData.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\NiceDataFieldInfo.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\NiceTable.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\RelationFieldInfo.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\StringData.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\StringPool.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TableLog.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TableManager.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TableRecord.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TableTool.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TimeManager.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Lock.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\LogEvent.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\BaseFieldInfo.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\IndexTable.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\DBDataHelper.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\CSVTable.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\text_table.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AES.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\WorkThread.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Task.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TaskFactory.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TaskManager.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\ThreadEvent.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Md5Tool.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\ResoursePack.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasySet.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\RandTool.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AutoPtr.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\BaseCommon\Assertx.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\AutoDebug.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\AutoString.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Data.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\DataBuffer.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\DataStream.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\ExtFieldInfo.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\FieldIndex.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\FieldInfo.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\FileAPI.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\FileDataStream.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\MemBase.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\MemString.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\NiceData.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\NiceDataFieldInfo.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\NiceTable.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\RelationFieldInfo.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TableLog.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TableManager.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TableRecord.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TableTool.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TimeManager.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Lock.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\LogEvent.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\IndexTable.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\DBDataHelper.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\CSVTable.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\text_table.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\AES.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\WorkThread.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TaskManager.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\ThreadEvent.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Md5Tool.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\ResoursePack.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\BaseCommon\DataStream.inl">
+      <Filter>Base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

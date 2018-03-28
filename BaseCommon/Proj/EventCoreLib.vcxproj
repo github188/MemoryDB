@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{15D4CFBD-DA38-4B5D-BF01-7F9704EF9107}</ProjectGuid>
+    <RootNamespace>EventCoreLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(CLIENT_OBJ_DIR)\Lib\$(Configuration)\</OutDir>
+    <IntDir>$(CLIENT_OBJ_DIR)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>STATE_BASECOMMON_LIB;STATE_EVENTCORE_LIB;STRING_CODE_UTF8;SAVE_DEBUG_LOG;__WINDOWS__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CODE_COMMON_DIR)/BaseCommon</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__WINDOWS__;NDEBUG;EVENTCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CODE_COMMON_DIR)/BaseCommon</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\EventCore\Core\CEvent.cpp" />
+    <ClCompile Include="..\EventCore\Core\ClientEvent.cpp" />
+    <ClCompile Include="..\EventCore\Core\Event.cpp" />
+    <ClCompile Include="..\EventCore\Core\EventCenter.cpp" />
+    <ClCompile Include="..\EventCore\Core\EventCore.cpp" />
+    <ClCompile Include="..\EventCore\Core\EventFactory.cpp" />
+    <ClCompile Include="..\EventCore\Core\FixedTimeManager.cpp" />
+    <ClCompile Include="..\EventCore\Core\LogicEvent.cpp" />
+    <ClCompile Include="..\EventCore\Core\LogicNode.cpp" />
+    <ClCompile Include="..\EventCore\Core\ResponseEvent.cpp" />
+    <ClCompile Include="..\EventCore\Core\ServerEvent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\EventCore\Core\CEvent.h" />
+    <ClInclude Include="..\EventCore\Core\ClientEvent.h" />
+    <ClInclude Include="..\EventCore\Core\EasyListNode.h" />
+    <ClInclude Include="..\EventCore\Core\Event.h" />
+    <ClInclude Include="..\EventCore\Core\EventCallBack.h" />
+    <ClInclude Include="..\EventCore\Core\EventCenter.h" />
+    <ClInclude Include="..\EventCore\Core\Eventcore.h" />
+    <ClInclude Include="..\EventCore\Core\EventDllFace.h" />
+    <ClInclude Include="..\EventCore\Core\EventFactory.h" />
+    <ClInclude Include="..\EventCore\Core\FixedTimeManager.h" />
+    <ClInclude Include="..\EventCore\Core\LogicEvent.h" />
+    <ClInclude Include="..\EventCore\Core\LogicNode.h" />
+    <ClInclude Include="..\EventCore\Core\ResponseEvent.h" />
+    <ClInclude Include="..\EventCore\Core\ScriptFace.h" />
+    <ClInclude Include="..\EventCore\Core\ServerEvent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="CommonLib.vcxproj">
+      <Project>{f1e38fbf-bdb9-4117-adf2-1cc3db2c9436}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

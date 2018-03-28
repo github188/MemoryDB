@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F1E38FBF-BDB9-4117-ADF2-1CC3DB2C9436}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>CommonLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(CLIENT_OBJ_DIR)\Lib\$(Configuration)\</OutDir>
+    <IntDir>$(CLIENT_OBJ_DIR)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(CLIENT_OBJ_DIR)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;__WINDOWS__;_DEBUG;STATE_BASECOMMON_LIB;STRING_CODE_UTF8;SAVE_DEBUG_LOG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAsManaged>false</CompileAsManaged>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;STRING_CODE_UTF8;__WINDOWS__;BASECOMMON_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BaseCommon\AES.h" />
+    <ClInclude Include="..\BaseCommon\Array.h" />
+    <ClInclude Include="..\BaseCommon\Assertx.h" />
+    <ClInclude Include="..\BaseCommon\Auto.h" />
+    <ClInclude Include="..\BaseCommon\AutoDebug.h" />
+    <ClInclude Include="..\BaseCommon\AutoKey.h" />
+    <ClInclude Include="..\BaseCommon\AutoObjectFieldInfo.h" />
+    <ClInclude Include="..\BaseCommon\AutoPtr.h" />
+    <ClInclude Include="..\BaseCommon\AutoString.h" />
+    <ClInclude Include="..\BaseCommon\BaseCommon.h" />
+    <ClInclude Include="..\BaseCommon\BaseFieldInfo.h" />
+    <ClInclude Include="..\BaseCommon\CSVTable.h" />
+    <ClInclude Include="..\BaseCommon\Data.h" />
+    <ClInclude Include="..\BaseCommon\DataBuffer.h" />
+    <ClInclude Include="..\BaseCommon\DataStream.h" />
+    <ClInclude Include="..\BaseCommon\DBDataHelper.h" />
+    <ClInclude Include="..\BaseCommon\EasyList.h" />
+    <ClInclude Include="..\BaseCommon\EasyMap.h" />
+    <ClInclude Include="..\BaseCommon\EasyMemory.h" />
+    <ClInclude Include="..\BaseCommon\EasySet.h" />
+    <ClInclude Include="..\BaseCommon\EasyStack.h" />
+    <ClInclude Include="..\BaseCommon\EasyString.h" />
+    <ClInclude Include="..\BaseCommon\ExtFieldInfo.h" />
+    <ClInclude Include="..\BaseCommon\FactoryTemplate.h" />
+    <ClInclude Include="..\BaseCommon\FieldIndex.h" />
+    <ClInclude Include="..\BaseCommon\FieldInfo.h" />
+    <ClInclude Include="..\BaseCommon\FieldTypeDefine.h" />
+    <ClInclude Include="..\BaseCommon\FileAPI.h" />
+    <ClInclude Include="..\BaseCommon\FileDataStream.h" />
+    <ClInclude Include="..\BaseCommon\Hand.h" />
+    <ClInclude Include="..\BaseCommon\IndexTable.h" />
+    <ClInclude Include="..\BaseCommon\Lock.h" />
+    <ClInclude Include="..\BaseCommon\LogEvent.h" />
+    <ClInclude Include="..\BaseCommon\Md5Tool.h" />
+    <ClInclude Include="..\BaseCommon\MemBase.h" />
+    <ClInclude Include="..\BaseCommon\MemString.h" />
+    <ClInclude Include="..\BaseCommon\NiceData.h" />
+    <ClInclude Include="..\BaseCommon\NiceDataFieldInfo.h" />
+    <ClInclude Include="..\BaseCommon\NiceTable.h" />
+    <ClInclude Include="..\BaseCommon\RandTool.h" />
+    <ClInclude Include="..\BaseCommon\RelationFieldInfo.h" />
+    <ClInclude Include="..\BaseCommon\ResoursePack.h" />
+    <ClInclude Include="..\BaseCommon\StringData.h" />
+    <ClInclude Include="..\BaseCommon\StringPool.h" />
+    <ClInclude Include="..\BaseCommon\TableLog.h" />
+    <ClInclude Include="..\BaseCommon\TableManager.h" />
+    <ClInclude Include="..\BaseCommon\TableRecord.h" />
+    <ClInclude Include="..\BaseCommon\TableTool.h" />
+    <ClInclude Include="..\BaseCommon\Task.h" />
+    <ClInclude Include="..\BaseCommon\TaskFactory.h" />
+    <ClInclude Include="..\BaseCommon\TaskManager.h" />
+    <ClInclude Include="..\BaseCommon\text_table.h" />
+    <ClInclude Include="..\BaseCommon\ThreadEvent.h" />
+    <ClInclude Include="..\BaseCommon\TimeManager.h" />
+    <ClInclude Include="..\BaseCommon\WorkThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\BaseCommon\AES.cpp" />
+    <ClCompile Include="..\BaseCommon\Assertx.cpp" />
+    <ClCompile Include="..\BaseCommon\AutoDebug.cpp" />
+    <ClCompile Include="..\BaseCommon\AutoString.cpp" />
+    <ClCompile Include="..\BaseCommon\CSVTable.cpp" />
+    <ClCompile Include="..\BaseCommon\Data.cpp" />
+    <ClCompile Include="..\BaseCommon\DataBuffer.cpp" />
+    <ClCompile Include="..\BaseCommon\DataStream.cpp" />
+    <ClCompile Include="..\BaseCommon\DBDataHelper.cpp" />
+    <ClCompile Include="..\BaseCommon\ExtFieldInfo.cpp" />
+    <ClCompile Include="..\BaseCommon\FieldIndex.cpp" />
+    <ClCompile Include="..\BaseCommon\FieldInfo.cpp" />
+    <ClCompile Include="..\BaseCommon\FileAPI.cpp" />
+    <ClCompile Include="..\BaseCommon\FileDataStream.cpp" />
+    <ClCompile Include="..\BaseCommon\IndexTable.cpp" />
+    <ClCompile Include="..\BaseCommon\Lock.cpp" />
+    <ClCompile Include="..\BaseCommon\LogEvent.cpp" />
+    <ClCompile Include="..\BaseCommon\Md5Tool.cpp" />
+    <ClCompile Include="..\BaseCommon\MemBase.cpp" />
+    <ClCompile Include="..\BaseCommon\MemString.cpp" />
+    <ClCompile Include="..\BaseCommon\NiceData.cpp" />
+    <ClCompile Include="..\BaseCommon\NiceDataFieldInfo.cpp" />
+    <ClCompile Include="..\BaseCommon\NiceTable.cpp" />
+    <ClCompile Include="..\BaseCommon\RelationFieldInfo.cpp" />
+    <ClCompile Include="..\BaseCommon\ResoursePack.cpp" />
+    <ClCompile Include="..\BaseCommon\TableLog.cpp" />
+    <ClCompile Include="..\BaseCommon\TableManager.cpp" />
+    <ClCompile Include="..\BaseCommon\TableRecord.cpp" />
+    <ClCompile Include="..\BaseCommon\TableTool.cpp" />
+    <ClCompile Include="..\BaseCommon\TaskManager.cpp" />
+    <ClCompile Include="..\BaseCommon\text_table.cpp" />
+    <ClCompile Include="..\BaseCommon\ThreadEvent.cpp" />
+    <ClCompile Include="..\BaseCommon\TimeManager.cpp" />
+    <ClCompile Include="..\BaseCommon\WorkThread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\BaseCommon\DataStream.inl" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\OneGame\samples\Javascript\ProjectH\Libs\ZLib\ZLib.vcxproj">
+      <Project>{bd8d34ff-d686-4434-8d83-a21298acfee1}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,255 @@
+等待事件, 只有完成且等待回调为空,才会取消, 所以确定取消等待,最好使用 StopWaitTime
+if ((!hE 
+					|| hE->needFree())
+					|| (hE->getFinished() && (*it).mWaitCallBack.Nothing() )
+					|| hE->getUseData()==NULL
+					)
+				{关于字符串哈希TableTool stringID_Ex 比汇编方式慢 1倍String::_hash  比上面快 100多倍NiceData 与 IDNiceData 可2选一1 如果要求速度，则使用NiceData 2 要求空间及网络流量, 则使用IDNiceData总结： 如果强调网络序列及流量，则还是使用Prototal buffer 比较理想测试结果总结：	1 EasyHash (现名) ArrayListHash 实际测试比hash_map 要快， 且对于增加删除时比较有优势，但空间占用稍多于其他	2 EasyMapHash 在数量多时慢于 hash_map, 少时略快	3 EasyOneHash 由于必须使用 string_id, 慢于以上所有HASH	所以，最优实现是 ArrayListHash一 EasyHash 测试如下[10:43:40] -------- My hash init create use time [31] 使用空间 3 325 744
+
+[10:43:40] ==========Finish ============
+[10:43:48] My hash Find use time [8346], find count [30000000], get [30000000]
+
+[10:43:48] Hash_map init create use time [250]
+
+[10:43:56] Hash_map find use time [7784], find [30000000], get [30000000]
+
+//-------------------------------------------------------------------------*/
+
+二 ArrayListHash 测试如下
+[10:45:57] -------- My hash init create use time [47]  使用空间 6 038 608
+
+[10:45:57] ==========Finish ============
+[10:46: 2] My hash Find use time [5413], find count [30000000], get [30000000]
+
+[10:46: 2] Hash_map init create use time [265]
+
+[10:46:10] Hash_map find use time [7722], find [30000000], get [30000000]
+
+2 EasyMap 测试如下
+[11:44:42] -------- My hash init create use time [0], count [300]
+
+[11:44:42] ==========Finish ============
+[11:44:42] Hash_map init create use time [0], count [300]
+
+[11:44:42] My hash Find use time [203], find count [300000], get [0]
+
+[11:44:42] Hash_map find use time [78], find [300000], get [300000]
+
+三 与 EasyOneHash 测试比较
+	1 ArrayListHash
+	[11: 4:23] -------- My hash init create use time [0], count [300]
+
+[11: 4:23] ==========Finish ============
+[11: 4:23] Hash_map init create use time [0], count [300]
+
+[11: 4:23] My hash Find use time [46], find count [300000], get [0]
+
+[11: 4:24] Hash_map find use time [78], find [300000], get [300000]
+
+
+2 EasyOneHash 比 ArrayListHash 慢的原因是 string_id 的计算
+(1) 使用 string_id
+[11:11:45] -------- My hash init create use time [0], count [29887]
+
+[11:11:45] ==========Finish ============
+[11:11:45] Hash_map init create use time [31], count [300]
+
+[11:11:45] My hash Find use time [78], find count [300000], get [0]
+
+[11:11:45] Hash_map find use time [63], find [300000], get [300000]
+(2) 使用 AString::_hash
+[11:13:49] -------- My hash init create use time [16], count [44832]
+
+[11:13:49] ==========Finish ============
+[11:13:49] Hash_map init create use time [31], count [300]
+
+[11:13:49] My hash Find use time [47], find count [300000], get [0]
+
+[11:13:49] Hash_map find use time [78], find [300000], get [300000]
+
+(3) EasyHash
+(2)
+[11:15:47] -------- My hash init create use time [0], count [300]
+
+[11:15:47] ==========Finish ============
+[11:15:47] Hash_map init create use time [0], count [300]
+
+[11:15:47] My hash Find use time [62], find count [300000], get [0]
+
+[11:15:47] Hash_map find use time [78], find [300000], get [300000]
+//-------------------------------------------------------------------------*/
+#include "EasyHash.h"
+#include "FastHash.h"
+#include <hash_map>
+
+using namespace stdext;
+
+#define TEST_COUNT		10000
+#define FIND_COUNT		1000
+
+AString genCDKeyString(char * buff, char c1, int n)
+{
+	char metachar[] = "abcdefghijklmnopqrstuvwxyz0123456789";
+	buff[0] = c1;
+	for (int i = 1; i < n - 1; i++)
+	{
+		buff[i] = metachar[rand() % 36]; 
+	}
+	buff[n - 1] = '\0';
+	return buff;
+}
+
+void LoginThread::OnStart( void* )
+{
+
+	{
+		EasyHash<AString, AString, TEST_COUNT> tmm;
+
+		char r[10];
+		uint now = TimeManager::NowTick();
+		for (int m = 1; m <= 3; m ++)
+		{
+			for (int i = 0; i < TEST_COUNT; i ++)
+			{
+				AString str = genCDKeyString(r, '0'+m, 9);
+				tmm.insert(str, str);
+			}
+		}
+		HASH_LOG("-------- My hash init create use time [%u]\r\n", TimeManager::NowTick()-now);
+		//tmm.Dump();
+
+		//auto it = tmm.Begin();
+
+		//if (it.Have(tmm))
+		//{
+		//	do 
+		//	{
+		//		HASH_LOG("Key %s = %s", it.Value(tmm).mKey.c_str(), it.Value(tmm).mVal.c_str());
+		//	}
+		//	while (it.Next(tmm));
+		//}
+		HASH_LOG ("==========Finish ============");
+		int findCount = 0;
+		int count = 0;
+		now = TimeManager::NowTick();
+		for (int m = 1; m <= FIND_COUNT; m ++)
+		{
+			//for (int i = 0; i < TEST_COUNT*1000; i ++)
+			//{
+			//	AString str = genCDKeyString(r, '0'+m, 9);
+			//	if (tmm.findPtr(str)!=NULL)
+			//		++findCount;
+			//}
+			auto it = tmm.begin();
+			if (it.Have(tmm))
+			{
+				do 
+				{
+					//HASH_LOG("Key %s = %s", it.Value(tmm).mKey.c_str(), it.Value(tmm).mVal.c_str());
+					AString str = it.Value(tmm).mKey;
+					if (tmm.findPtr(str)!=NULL)
+						++findCount;
+					++count;
+				}
+				while (it.Next(tmm));
+			}
+		}
+		HASH_LOG("My hash Find use time [%u], find count [%d], get [%d]\r\n", TimeManager::NowTick()-now, count, findCount);
+
+		hash_map<AString, AString> tmm2;
+		now = TimeManager::NowTick();
+		for (int m = 1; m <= 3; m ++)
+		{
+			for (int i = 0; i < TEST_COUNT; i ++)
+			{
+				AString str = genCDKeyString(r, '0'+m, 9);
+				tmm2[str] = str;
+			}
+		}
+		HASH_LOG("Hash_map init create use time [%u]\r\n", TimeManager::NowTick()-now);
+		findCount = 0;
+		count = 0;
+		now = TimeManager::NowTick();
+		for (int m = 1; m <= FIND_COUNT; m ++)
+		{
+			//for (int i = 0; i < TEST_COUNT*1000; i ++)
+			//{
+			//	AString str = genCDKeyString(r, '0'+m, 9);
+			// 	if (tmm2.find(str)!=tmm2.end())
+			//		++findCount;
+			//}
+			for (auto it = tmm2.begin(); it!=tmm2.end(); ++it)
+			{
+				//HASH_LOG("Key %s = %s", it.Value(tmm).mKey.c_str(), it.Value(tmm).mVal.c_str());
+				AString str = it->first;
+				if (tmm2.find(str)!=tmm2.end())
+					++findCount;
+				++count;
+			}
+		}
+		HASH_LOG("Hash_map find use time [%u], find [%d], get [%d]\r\n", TimeManager::NowTick()-now, count, findCount);
+	}
+
+
+
+	测试功能
+
+		{
+		EasyHash<AString, AString, TEST_COUNT> tmm;
+
+		char r[10];
+		uint now = TimeManager::NowTick();
+		for (int m = 1; m <= 1; m ++)
+		{
+			for (int i = 0; i < TEST_COUNT; i ++)
+			{
+				AString str = genCDKeyString(r, '0'+m, 9);
+				tmm.insert(str, str);
+			}
+		}
+		HASH_LOG("-------- My hash init create use time [%u]\r\n", TimeManager::NowTick()-now);
+		tmm.Dump();
+
+		auto it = tmm.begin();
+		int i = 0;
+		if (it.have())
+		{
+			do 
+			{
+				HASH_LOG("[%d] Key %s = %s", i++, it.Value().mKey.c_str(), it.Value().mVal.c_str());
+			}
+			while (it.next());
+		}
+		HASH_LOG("find [%s]", tmm.find("1cv7uvh3").c_str());
+		bool b = tmm.erase("1cv7uvh3");
+		HASH_LOG("Remove [%s]", b ? "成功":"失败");
+		i = 0;
+		it.reset();
+		if (it.have())
+		{
+			do 
+			{
+				HASH_LOG("[%d] Key %s = %s", i++, it.Value().mKey.c_str(), it.Value().mVal.c_str());
+			}
+			while (it.next());
+		}
+		i =0;
+		for (auto x=tmm.begin(); x; )
+		{
+			if (i++==7)
+				x.erase();
+			else
+				++x;
+		}
+		it.reset();
+		i=0;
+		if (it.have())
+		{
+			do 
+			{
+				HASH_LOG("[%d] Key %s = %s", i++, it.Value().mKey.c_str(), it.Value().mVal.c_str());
+			}
+			while (it.next());
+		}
+		tmm.Dump();
+	}

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F657F3D-4B87-452A-87B6-CAB2521B4541}</ProjectGuid>
+    <RootNamespace>NetDllLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(CLIENT_OBJ_DIR)\Lib\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(CLIENT_OBJ_DIR)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>STATE_NET_LIB;STATE_BASECOMMON_LIB;STATE_EVENTCORE_LIB;USE_SOCKET;__WINDOWS__;STRING_CODE_UTF8;SAVE_DEBUG_LOG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CODE_COMMON_DIR)/BaseCommon;$(CODE_COMMON_DIR)/EventCore/Core</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__WINDOWS__;NDEBUG;USE_SOCKET;NET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CODE_COMMON_DIR)/BaseCommon;$(CODE_COMMON_DIR)/EventCore/Core</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\NetDll\Net\BaseEventNet.h" />
+    <ClInclude Include="..\NetDll\Net\ClientNet.h" />
+    <ClInclude Include="..\NetDll\Net\EventPacket.h" />
+    <ClInclude Include="..\NetDll\Net\EventProtocol.h" />
+    <ClInclude Include="..\NetDll\Net\FileDataReceive.h" />
+    <ClInclude Include="..\NetDll\Net\FileNetTransfer.h" />
+    <ClInclude Include="..\NetDll\Net\NetConnect.h" />
+    <ClInclude Include="..\NetDll\Net\NetDataBuffer.h" />
+    <ClInclude Include="..\NetDll\Net\NetHead.h" />
+    <ClInclude Include="..\NetDll\Net\Packet.h" />
+    <ClInclude Include="..\NetDll\Net\PacketFactory.h" />
+    <ClInclude Include="..\NetDll\Net\ServerIPInfo.h" />
+    <ClInclude Include="..\NetDll\Net\Socket.h" />
+    <ClInclude Include="..\NetDll\Net\SocketAPI.h" />
+    <ClInclude Include="..\NetDll\Net\SocketInputStream.h" />
+    <ClInclude Include="..\NetDll\Net\SocketOutputStream.h" />
+    <ClInclude Include="..\NetDll\Net\UDPEasyNet.h" />
+    <ClInclude Include="..\NetDll\Net\UDPNetConnect.h" />
+    <ClInclude Include="..\NetDll\Net\UDPSocket.h" />
+    <ClInclude Include="..\NetDll\Net\UDPThreadReceiveNet.h" />
+    <ClInclude Include="..\NetDll\Net\UDPThreadReceiveSocket.h" />
+    <ClInclude Include="..\NetDll\Net\UDPWaitSendEvent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\NetDll\Net\BaseEventNet.cpp" />
+    <ClCompile Include="..\NetDll\Net\ClientNet.cpp" />
+    <ClCompile Include="..\NetDll\Net\EventPacket.cpp" />
+    <ClCompile Include="..\NetDll\Net\EventProtocol.cpp" />
+    <ClCompile Include="..\NetDll\Net\FileDataReceive.cpp" />
+    <ClCompile Include="..\NetDll\Net\FileNetTansfer.cpp" />
+    <ClCompile Include="..\NetDll\Net\NetConnect.cpp" />
+    <ClCompile Include="..\NetDll\Net\Packet.cpp" />
+    <ClCompile Include="..\NetDll\Net\ServerIPInfo.cpp" />
+    <ClCompile Include="..\NetDll\Net\Socket.cpp" />
+    <ClCompile Include="..\NetDll\Net\SocketAPI.cpp" />
+    <ClCompile Include="..\NetDll\Net\SocketInputStream.cpp" />
+    <ClCompile Include="..\NetDll\Net\SocketOutputStream.cpp" />
+    <ClCompile Include="..\NetDll\Net\UDPEasyNet.cpp" />
+    <ClCompile Include="..\NetDll\Net\UDPNetConnect.cpp" />
+    <ClCompile Include="..\NetDll\Net\UDPSocket.cpp" />
+    <ClCompile Include="..\NetDll\Net\UDPThreadReceiveNet.cpp" />
+    <ClCompile Include="..\NetDll\Net\UDPThreadReceiveSocket.cpp" />
+    <ClCompile Include="..\NetDll\Net\UDPWaitSendEvent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="CommonLib.vcxproj">
+      <Project>{f1e38fbf-bdb9-4117-adf2-1cc3db2c9436}</Project>
+    </ProjectReference>
+    <ProjectReference Include="EventCoreLib.vcxproj">
+      <Project>{15d4cfbd-da38-4b5d-bf01-7f9704ef9107}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

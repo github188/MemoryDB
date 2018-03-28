@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseCommon", "BaseCommon.vcxproj", "{993EB6BB-F676-4126-B322-6C5448EA8867}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AStarPath", "..\..\tools\AStarPath\AStarPath\AStarPath.vcxproj", "{190F4FE9-31AD-43C4-99FE-28B734323266}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{993EB6BB-F676-4126-B322-6C5448EA8867}.Debug|Win32.ActiveCfg = Debug|Win32
+		{993EB6BB-F676-4126-B322-6C5448EA8867}.Debug|Win32.Build.0 = Debug|Win32
+		{993EB6BB-F676-4126-B322-6C5448EA8867}.Release|Win32.ActiveCfg = Release|Win32
+		{993EB6BB-F676-4126-B322-6C5448EA8867}.Release|Win32.Build.0 = Release|Win32
+		{190F4FE9-31AD-43C4-99FE-28B734323266}.Debug|Win32.ActiveCfg = Debug|Win32
+		{190F4FE9-31AD-43C4-99FE-28B734323266}.Debug|Win32.Build.0 = Debug|Win32
+		{190F4FE9-31AD-43C4-99FE-28B734323266}.Release|Win32.ActiveCfg = Release|Win32
+		{190F4FE9-31AD-43C4-99FE-28B734323266}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

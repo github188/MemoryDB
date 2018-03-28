@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98A3C1B2-0174-4A9A-93D8-7BCE68E2AD96}</ProjectGuid>
+    <RootNamespace>LogicSystem</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(CLIENT_OBJ_DIR)\Lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(CLIENT_OBJ_DIR)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(CLIENT_OBJ_DIR)\Lib\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(CLIENT_OBJ_DIR)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(CODE_COMMON_DIR)/BaseCommon;../;../EventCore/core;../LuaPlus;../EventCore/LogicSystem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LOGICSYSTEM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_d.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(OutDir)$(ProjectName)_d.lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY $(OutDir)$(ProjectName)_d.lib $(CLIENT_LIB_DIR)\$(ProjectName)_d.lib
+COPY $(OutDir)$(ProjectName)_d.dll $(Server_Out_Dir)\$(ProjectName)_d.dll
+
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(CODE_COMMON_DIR)/BaseCommon;../;../EventCore/core;../LuaPlus;../EventCore/LogicSystem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LOGICSYSTEM_EXPORTS;GAME_CLIENT;__SERVER__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY $(OutDir)$(TargetName).lib $(CLIENT_LIB_DIR)\Release\$(TargetName).lib
+COPY $(OutDir)$(TargetName).dll $(CLIENT_RUN_DIR)\Release\$(TargetName).dll
+COPY $(OutDir)$(ProjectName).dll $(Server_Out_Dir)\$(ProjectName).dll
+COPY $(OutDir)$(ProjectName).dll $(Server_Out_Dir)_2\$(ProjectName).dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\EventCore\LogicSystem\LogicSystem.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\LuaObj_DataTable.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\LuaScriptFace.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\LuaScriptManager.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\NetMessageEvent.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\NetSendEvent.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\ActionEvent.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\ScriptLogicEvent.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\ScriptLogicNode.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\LuaEventObject.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\RunScriptTool.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\ScriptEvent.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\ScriptEventCenter.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\ScriptMaster.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\AttributeEvent.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\EventCenterManager.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\EventThreadServer.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\TaskEventThread.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\ThreadEvent.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\ThreadEventCenter.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\LogicMaster.cpp" />
+    <ClCompile Include="..\EventCore\LogicSystem\LogicTime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\EventCore\LogicSystem\LogicSystem.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\LuaObj_DataTable.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\LuaScriptFace.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\LuaScriptManager.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\NetEventFactory.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\NetMessageEvent.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\NetSendEvent.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\ActionEvent.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\LogicAcceptEvent.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptLogicEvent.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptLogicNode.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\LuaEventObject.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\LuaObjectPool.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\RunScriptTool.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptEvent.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptEventCenter.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptEventFactory.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\ScriptMaster.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\TableScriptPool.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\AttributeEvent.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\EventCenterManager.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\EventThreadServer.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\TaskEventThread.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\ThreadEvent.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\ThreadEventCenter.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\LogicMaster.h" />
+    <ClInclude Include="..\EventCore\LogicSystem\LogicTime.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LuaPlus\LuaPlus.vs2005.vcxproj">
+      <Project>{1658eb2f-8e9f-4d28-85ac-633f0f4c82d4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="EventCore.vcxproj">
+      <Project>{be19e7a3-578f-4d7e-97df-a5dea9d9e417}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

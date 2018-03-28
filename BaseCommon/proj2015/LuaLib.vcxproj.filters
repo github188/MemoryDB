@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Tool">
+      <UniqueIdentifier>{7b0a8b71-72ff-4e7d-87e7-4c8b000fefef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua_5.1.5">
+      <UniqueIdentifier>{adf90365-2493-4031-b327-0ebb65a593cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ToLua++_1.0.93">
+      <UniqueIdentifier>{d0a1f6b8-1520-4031-9552-277db5912bae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\LuaLib\Lua\lapi.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lauxlib.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lbaselib.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lcode.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\ldblib.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\ldebug.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\ldo.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\ldump.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lfunc.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lgc.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\linit.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\liolib.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\llex.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lmathlib.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lmem.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\loadlib.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lobject.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lopcodes.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\loslib.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lparser.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lstate.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lstring.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lstrlib.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\ltable.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\ltablib.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\ltm.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lua.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\luac.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lundump.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lvm.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\lzio.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\Lua\print.c">
+      <Filter>Lua_5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\ToLua++\tolua_event.c">
+      <Filter>ToLua++_1.0.93</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\ToLua++\tolua_is.c">
+      <Filter>ToLua++_1.0.93</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\ToLua++\tolua_map.c">
+      <Filter>ToLua++_1.0.93</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\ToLua++\tolua_push.c">
+      <Filter>ToLua++_1.0.93</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaLib\ToLua++\tolua_to.c">
+      <Filter>ToLua++_1.0.93</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\LuaLib\Lua\lapi.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lauxlib.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lcode.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\ldebug.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\ldo.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lfunc.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lgc.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\llex.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\llimits.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lmem.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lobject.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lopcodes.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lparser.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lstate.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lstring.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\ltable.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\ltm.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lua.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\luaconf.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lualib.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lundump.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lvm.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\Lua\lzio.h">
+      <Filter>Lua_5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\ToLua++\tolua_event.h">
+      <Filter>ToLua++_1.0.93</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaLib\ToLua++\tolua++.h">
+      <Filter>ToLua++_1.0.93</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LuaLib\Lua\Makefile">
+      <Filter>Lua_5.1.5</Filter>
+    </None>
+  </ItemGroup>
+</Project>

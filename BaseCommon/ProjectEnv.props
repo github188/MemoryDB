@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <PROJECT_ROOT>..\..</PROJECT_ROOT>
+    <CODE_COMMON_DIR>$(PROJECT_ROOT)\BaseCommon</CODE_COMMON_DIR>
+    <Server_Out_Dir>$(PROJECT_ROOT)\ServerRun</Server_Out_Dir>
+    <Server_Int_Dir>f:\Build</Server_Int_Dir>
+    <COMMON_BASE_LIB>f:\Build\BaseLib</COMMON_BASE_LIB>
+    <GAME_SERVER_RUN>$(Server_Out_Dir)</GAME_SERVER_RUN>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="PROJECT_ROOT">
+      <Value>$(PROJECT_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CODE_COMMON_DIR">
+      <Value>$(CODE_COMMON_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="Server_Out_Dir">
+      <Value>$(Server_Out_Dir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="Server_Int_Dir">
+      <Value>$(Server_Int_Dir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="COMMON_BASE_LIB">
+      <Value>$(COMMON_BASE_LIB)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="GAME_SERVER_RUN">
+      <Value>$(GAME_SERVER_RUN)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

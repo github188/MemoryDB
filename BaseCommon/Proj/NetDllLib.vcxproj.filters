@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{e89ceaa8-5349-490c-ba3c-ffb4dd920585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSend">
+      <UniqueIdentifier>{d1d14ccc-b029-47b3-8ea0-38aada1a7ff1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\NetDll\Net\SocketAPI.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\EventPacket.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\EventProtocol.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\NetDataBuffer.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\NetHead.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\Packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\PacketFactory.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\Socket.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\SocketInputStream.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\SocketOutputStream.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPEasyNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPSocket.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPWaitSendEvent.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPNetConnect.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPThreadReceiveNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\UDPThreadReceiveSocket.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\BaseEventNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\ClientNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\NetConnect.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\ServerIPInfo.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\FileDataReceive.h">
+      <Filter>FileSend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetDll\Net\FileNetTransfer.h">
+      <Filter>FileSend</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\NetDll\Net\SocketAPI.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\EventPacket.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\EventProtocol.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\Packet.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\Socket.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\SocketInputStream.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\SocketOutputStream.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPEasyNet.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPSocket.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPWaitSendEvent.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPNetConnect.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPThreadReceiveNet.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\UDPThreadReceiveSocket.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\BaseEventNet.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\ClientNet.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\NetConnect.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\ServerIPInfo.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\FileDataReceive.cpp">
+      <Filter>FileSend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDll\Net\FileNetTansfer.cpp">
+      <Filter>FileSend</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

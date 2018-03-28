@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{cdfcc5e5-5828-48bd-99c8-6aa0225d1cd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Table">
+      <UniqueIdentifier>{03553f44-c91e-46ec-b0a7-8e0cbd51fdfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{6998b532-0810-454d-ab75-a1487338905c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{08b084d7-f713-41f9-bbfd-1092d756b57d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{d7f0cd0a-6c6a-4403-822c-d5b6a6dded80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{edb9e959-3b23-4a81-ae32-66484f3ea808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{07fe9162-ae56-4cd7-8db6-a6ff51d9e793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assertx">
+      <UniqueIdentifier>{1ea24b45-e6e5-4f71-aa0f-5d304103ff92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{62bf7c6c-e08a-4a75-b95b-e8104a4df6bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{4d727331-98c8-4b10-9cee-f3b99c616f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zip">
+      <UniqueIdentifier>{3b36aa39-b543-4607-987e-e4fcf0bfdf5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MD5">
+      <UniqueIdentifier>{db35bddb-9b53-4cd2-80d3-511ae0327ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBBase">
+      <UniqueIdentifier>{28d1de75-578f-47fc-a089-fe407f84c018}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BaseCommon\Array.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AutoDebug.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AutoKey.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyList.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyMap.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyStack.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AutoString.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyString.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\BackTask.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Data.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\DataBuffer.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\DataStream.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\NiceData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyMemory.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\MemBase.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FieldIndex.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FieldInfo.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FieldTypeDefine.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TableLog.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TableManager.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TableTool.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Assertx.h">
+      <Filter>Assertx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Task.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TaskFactory.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TaskManager.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\WorkThread.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\text_table.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Lock.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\LogEvent.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\BaseCommon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\ExtFieldInfo.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TimeManager.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\crc32.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\deflate.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\inffast.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\inffixed.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\inflate.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\inftrees.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\trees.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\zconf.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\zconf.in.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\zlib.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Zip\zutil.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\BaseFieldInfo.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FileAPI.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FileDataStream.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\NiceDataFieldInfo.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Thread.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\PoolList.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\ThreadEvent.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasySet.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Hand.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Md5Tool.h">
+      <Filter>MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\ResoursePack.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\RandTool.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TableFieldInfo.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\DBCallBack.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\BaseTable.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\RecordIndex.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\IndexBaseTable.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Int64MapIndex.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\StringTool.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\IndexDBRecord.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\CSVTableLoader.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\CSVReader.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\IDArrayIndex.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\BaseRecord.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\TableUpdateLoader.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\StringHashIndex.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\SqlLog.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\MultipleInt64MapIndex.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\FieldSubTable.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\LoopList.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\LogThread.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\MultipleStringIndex.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\RecordFieldInfo.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\LoopDataStream.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\MemoryTableFieldIndex.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\RecordMemPool.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\ArrayIndex.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Dump.h">
+      <Filter>Assertx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\IDNiceData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\ArrayList.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\ConfigTable.h">
+      <Filter>Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\EasyHash.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AnyData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Int64HashIndex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\ListRecordIndex.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\Auto.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\AutoPtr.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\IntEasyHashIndex.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\IntEasyMapIndex.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\StringEasyHashIndex.h">
+      <Filter>DBBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseCommon\RecordTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\BaseCommon\AutoDebug.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\AutoString.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Data.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\DataBuffer.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\DataStream.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\NiceData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\MemBase.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\FieldIndex.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\FieldInfo.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TableLog.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TableManager.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TableTool.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Assertx.cpp">
+      <Filter>Assertx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TaskManager.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\WorkThread.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\text_table.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Lock.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\LogEvent.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\ExtFieldInfo.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TimeManager.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\adler32.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\compress.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\crc32.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\deflate.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\infback.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\inffast.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\inflate.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\inftrees.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\trees.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\uncompr.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Zip\zutil.c">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\FileAPI.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\FileDataStream.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\NiceDataFieldInfo.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\BackThreadMgr.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Thread.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\ThreadEvent.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Md5Tool.cpp">
+      <Filter>MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\ResoursePack.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\EasyMemory.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\TableFieldInfo.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\IndexBaseTable.cpp">
+      <Filter>DBBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\IndexDBRecord.cpp">
+      <Filter>DBBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\CSVTableLoader.cpp">
+      <Filter>DBBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\BaseTable.cpp">
+      <Filter>DBBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\CSVReader.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\IDArrayIndex.cpp">
+      <Filter>DBBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\BaseRecord.cpp">
+      <Filter>DBBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Int64MapIndex.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\MultipleInt64MapIndex.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\StringHashIndex.cpp">
+      <Filter>DBBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\MultipleStringIndex.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\RecordFieldInfo.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\LoopDataStream.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\Dump.cpp">
+      <Filter>Assertx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\IDNiceData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\RandTool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\ConfigTable.cpp">
+      <Filter>Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\FieldSubTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseCommon\MemoryTableFieldIndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\BaseCommon\DataStream.inl">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="..\BaseCommon\Zip\ReadMe.txt">
+      <Filter>Zip</Filter>
+    </None>
+    <None Include="资料信息.txt">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

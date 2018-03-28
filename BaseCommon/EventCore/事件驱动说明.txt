@@ -1,0 +1,45 @@
+
+
+
+1 把所有逻辑行为, 抽象为事件
+2 事件特点:
+  (1) 具有执行功能DoEvent()
+  (2) 具有被触发执行功能OnEvent()
+  (3) 具有传入参数数据表
+  (4) 具有处理后的数据表
+  (5) 加以被管理中心,以名称方式进行获取
+  (6) 可以加入管理中心,异步执行DoEvent(false)
+3 使用:
+	(1)定义事件,需要重载
+	// 可以被哪些事件进行触发
+	static bool HasRelation(AutoEvent &hEvent)
+	
+	// 做些什么
+	bool _DoEvent()
+	// 触发后,做些什么
+	virtual bool _OnEvent(AutoEvent &hEvent) 
+	// 完成后做些什么
+	virtual void _OnFinish() 
+	// 通过事件中心注册要执行的函数
+	eMgr.RegisterHandle("Test",new Logic::EventHandle(&Handle::dothing,&handle));
+	
+	(2)注册
+	eMgr.RegisterFactory("Test", new EventFactory<Logic::MyEvent>());
+	
+	(3)获取
+	AutoEvent pE = eMgr.GetEvent("Test");
+		
+	(4)使用
+	//启动执行
+	DoEvent(true)	//立即执行
+	DoEvent(false)	//事件中心更新时被执行
+	
+	//等待触发
+	Waiting()
+	
+	//完成结束
+	DoFinish()
+	
+	
+	
+	
