@@ -13,4 +13,7 @@
 
 目前未全面支持Linux平台
 
+详细分解请关注CSDN
+https://blog.csdn.net/wenge8126/article/details/79729607
+
 版权所有,使用请注册原作者
