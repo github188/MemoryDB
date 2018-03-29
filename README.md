@@ -21,7 +21,7 @@
   
   1 安装MySql, 创建home_db和account 两个DB库, 使用utf8字符集
 
-  2 配置DB (ServerRun\RunConfig\MemoryDBConfig.csv)
+  2 配置DB (ServerRun\RunConfig\AccountConfig.csv)
 
 STRING,STRING,INT,STRING,STRING,STRING,INT,INT,STRING
 INDEX,STRING,VALUE,INFO,STRING2,STRING3,VALUE2,VALUE3,STRING4
@@ -33,7 +33,7 @@ MainDBNode,127.0.0.1,2001,,,,,,
 
 
 DataDB >MySql连接信息
-DBServer > 开放给使用端连接的地址,t_tablelist 为DB表的列表信息表格名
+DBServer > 开放给使用端连接的地址,t_tablelist 为DB表的列表信息表格名, STRING3 如果为LOCAL_DB 表示使用本地文件方式落地,默认为MySql
 DBNode > 当前DB节点的网络地址,端口一般与其他节点连续
 MainDBNode > DB主节点地址, 此地址是DB节点启动后,加入到集群的首连接地址
 
